@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hello</title>
+	<!-- <link rel="stylesheet" id="style" href="styles/default.css" /> -->
+	<link rel="stylesheet" id="style" href="styles/monokai-sublime.css" />
+	<!-- <link rel="stylesheet" id="style" href="styles/monokai.css" /> -->
+
+	<style type="text/css">
+		pre .hljs {
+		    font-size: 16px;
+		    padding: 20px;
+		}
+
+	</style>
+
+</head>
+<body>
+
+<h2>See <a href="https://highlightjs.org/static/demo/" target="_blank">https://highlightjs.org/static/demo/</a></h2>
+
+<select id="change-style">
+	<option value="default.css">default.css</option>
+	<option value="a11y-dark.css">a11y-dark.css</option>
+	<option value="a11y-light.css">a11y-light.css</option>
+	<option value="agate.css">agate.css</option>
+	<option value="an-old-hope.css">an-old-hope.css</option>
+	<option value="androidstudio.css">androidstudio.css</option>
+	<option value="arduino-light.css">arduino-light.css</option>
+	<option value="arta.css">arta.css</option>
+	<option value="ascetic.css">ascetic.css</option>
+	<option value="atelier-cave-dark.css">atelier-cave-dark.css</option>
+	<option value="atelier-cave-light.css">atelier-cave-light.css</option>
+	<option value="atelier-dune-dark.css">atelier-dune-dark.css</option>
+	<option value="atelier-dune-light.css">atelier-dune-light.css</option>
+	<option value="atelier-estuary-dark.css">atelier-estuary-dark.css</option>
+	<option value="atelier-estuary-light.css">atelier-estuary-light.css</option>
+	<option value="atelier-forest-dark.css">atelier-forest-dark.css</option>
+	<option value="atelier-forest-light.css">atelier-forest-light.css</option>
+	<option value="atelier-heath-dark.css">atelier-heath-dark.css</option>
+	<option value="atelier-heath-light.css">atelier-heath-light.css</option>
+	<option value="atelier-lakeside-dark.css">atelier-lakeside-dark.css</option>
+	<option value="atelier-lakeside-light.css">atelier-lakeside-light.css</option>
+	<option value="atelier-plateau-dark.css">atelier-plateau-dark.css</option>
+	<option value="atelier-plateau-light.css">atelier-plateau-light.css</option>
+	<option value="atelier-savanna-dark.css">atelier-savanna-dark.css</option>
+	<option value="atelier-savanna-light.css">atelier-savanna-light.css</option>
+	<option value="atelier-seaside-dark.css">atelier-seaside-dark.css</option>
+	<option value="atelier-seaside-light.css">atelier-seaside-light.css</option>
+	<option value="atelier-sulphurpool-dark.css">atelier-sulphurpool-dark.css</option>
+	<option value="atelier-sulphurpool-light.css">atelier-sulphurpool-light.css</option>
+	<option value="atom-one-dark-reasonable.css">atom-one-dark-reasonable.css</option>
+	<option value="atom-one-dark.css">atom-one-dark.css</option>
+	<option value="atom-one-light.css">atom-one-light.css</option>
+	<option value="brown-paper.css">brown-paper.css</option>
+	<option value="codepen-embed.css">codepen-embed.css</option>
+	<option value="color-brewer.css">color-brewer.css</option>
+	<option value="darcula.css">darcula.css</option>
+	<option value="dark.css">dark.css</option>
+	<option value="docco.css">docco.css</option>
+	<option value="dracula.css">dracula.css</option>
+	<option value="far.css">far.css</option>
+	<option value="foundation.css">foundation.css</option>
+	<option value="github-gist.css">github-gist.css</option>
+	<option value="github.css">github.css</option>
+	<option value="gml.css">gml.css</option>
+	<option value="googlecode.css">googlecode.css</option>
+	<option value="gradient-dark.css">gradient-dark.css</option>
+	<option value="grayscale.css">grayscale.css</option>
+	<option value="gruvbox-dark.css">gruvbox-dark.css</option>
+	<option value="gruvbox-light.css">gruvbox-light.css</option>
+	<option value="hopscotch.css">hopscotch.css</option>
+	<option value="hybrid.css">hybrid.css</option>
+	<option value="idea.css">idea.css</option>
+	<option value="ir-black.css">ir-black.css</option>
+	<option value="isbl-editor-dark.css">isbl-editor-dark.css</option>
+	<option value="isbl-editor-light.css">isbl-editor-light.css</option>
+	<option value="kimbie.dark.css">kimbie.dark.css</option>
+	<option value="kimbie.light.css">kimbie.light.css</option>
+	<option value="lightfair.css">lightfair.css</option>
+	<option value="lioshi.css">lioshi.css</option>
+	<option value="magula.css">magula.css</option>
+	<option value="mono-blue.css">mono-blue.css</option>
+	<option value="monokai-sublime.css">monokai-sublime.css</option>
+	<option value="monokai.css">monokai.css</option>
+	<option value="night-owl.css">night-owl.css</option>
+	<option value="nnfx-dark.css">nnfx-dark.css</option>
+	<option value="nnfx.css">nnfx.css</option>
+	<option value="nord.css">nord.css</option>
+	<option value="obsidian.css">obsidian.css</option>
+	<option value="ocean.css">ocean.css</option>
+	<option value="paraiso-dark.css">paraiso-dark.css</option>
+	<option value="paraiso-light.css">paraiso-light.css</option>
+	<option value="pojoaque.css">pojoaque.css</option>
+	<option value="purebasic.css">purebasic.css</option>
+	<option value="qtcreator_dark.css">qtcreator_dark.css</option>
+	<option value="qtcreator_light.css">qtcreator_light.css</option>
+	<option value="railscasts.css">railscasts.css</option>
+	<option value="rainbow.css">rainbow.css</option>
+	<option value="routeros.css">routeros.css</option>
+	<option value="school-book.css">school-book.css</option>
+	<option value="shades-of-purple.css">shades-of-purple.css</option>
+	<option value="solarized-dark.css">solarized-dark.css</option>
+	<option value="solarized-light.css">solarized-light.css</option>
+	<option value="srcery.css">srcery.css</option>
+	<option value="sunburst.css">sunburst.css</option>
+	<option value="tomorrow-night-blue.css">tomorrow-night-blue.css</option>
+	<option value="tomorrow-night-bright.css">tomorrow-night-bright.css</option>
+	<option value="tomorrow-night-eighties.css">tomorrow-night-eighties.css</option>
+	<option value="tomorrow-night.css">tomorrow-night.css</option>
+	<option value="tomorrow.css">tomorrow.css</option>
+	<option value="vs.css">vs.css</option>
+	<option value="vs2015.css">vs2015.css</option>
+	<option value="xcode.css">xcode.css</option>
+	<option value="xt256.css">xt256.css</option>
+	<option value="zenburn.css">zenburn.css</option>
+</select>
+
+<pre class="language-html">
+	<code>&lt;title&gt;Title&lt;/title&gt;</code>
+</pre>
+
+<pre>
+	<code>
+&lt;!DOCTYPE html&gt;
+&lt;title&gt;Title&lt;/title&gt;
+
+&lt;style&gt;body {width: 500px;}&lt;/style&gt;
+
+&lt;script type="application/javascript"&gt;
+  function $init() {return true;}
+&lt;/script&gt;
+
+&lt;body&gt;
+  &lt;p checked class="title" id='title'&gt;Title&lt;/p&gt;
+  &lt;!-- here goes the rest of the page --&gt;
+&lt;/body&gt;
+	</code>
+</pre>
+
+<script type="text/javascript" src="highlight.pack.js"></script>
+<script type="text/javascript">
+	document.addEventListener('DOMContentLoaded', (event) => {
+	  document.querySelectorAll('pre code').forEach((block) => {
+	    hljs.highlightBlock(block);
+	  });
+	});
+
+	document.getElementById('change-style').addEventListener('change', (event) => {
+		console.log( event.target.value );
+		document.getElementById('style').setAttribute( 'href', 'styles/' + event.target.value);
+	});
+
+</script>
+</body>
+</html>
